@@ -15,16 +15,8 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { ApiAlert } from "@/components/ui/api-alert";
 import { AlertModal } from "@/components/modals/alert-modal";
-import { useOrigin } from "@/hooks/use-origin";
 import ImageUpload from "@/components/ui/image-upload";
-import { url } from "inspector";
-
-
-interface BillboardFormProps {
-    initialData: Billboard | null;
-}
 
 const formSchema = z.object({
     label: z.string().min(1),
@@ -33,10 +25,13 @@ const formSchema = z.object({
 
 type BillboardFormValues = z.infer<typeof formSchema>;
 
+interface BillboardFormProps {
+    initialData: Billboard | null;
+}
+
 export const BillboardForm: React.FC<BillboardFormProps> = ({initialData}) => {
     const params = useParams();
     const router = useRouter();
-    const origin = useOrigin();
 
     const [open, setOpen] = useState(false);
     const [loading, setLoading] = useState(false);
@@ -163,7 +158,6 @@ export const BillboardForm: React.FC<BillboardFormProps> = ({initialData}) => {
                         </Button>
                 </form>
             </Form>
-            <Separator />
         </>
     )
 };
