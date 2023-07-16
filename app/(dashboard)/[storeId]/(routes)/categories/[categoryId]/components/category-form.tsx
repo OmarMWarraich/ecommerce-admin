@@ -57,7 +57,7 @@ export const CategoryForm: React.FC<CategoryFormProps> = ({
         try {
             setLoading(true);
             if(initialData) {
-                await axios.patch(`/api/${params.storeId}/categories/${params.cetegoryId}`, values);
+                await axios.patch(`/api/${params.storeId}/categories/${params.categoryId}`, values);
             } else {
                 await axios.post(`/api/${params.storeId}/categories`, values);
             }
@@ -121,7 +121,7 @@ export const CategoryForm: React.FC<CategoryFormProps> = ({
                             render={({ field }) => (
                                 <FormItem>
                                     <FormLabel>
-                                        Label
+                                        Name
                                     </FormLabel>
                                     <FormControl>
                                         <Input
