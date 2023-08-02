@@ -58,7 +58,11 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 E-Commerce Admin Store <a name="about-project"></a>
 
-E-commerce admin application is the admin panel for the e-commerce store which is built using Next.js, Tailwindcss, Shadcn-ui and Typescript. The database used is Postgresql and is hosted on PlanetScale whereas the application is deployed on Vercel. The state of the application is managed with zustand while zod is used for schema validation. The application is complete with all the features required for an admin panel of an e-commerce store. It is responsive and has dark and light modes and works on all screen sizes and is integrated with payment features via Stripe. 
+The E-commerce admin application serves as the admin panel for the e-commerce store. It is meticulously crafted using cutting-edge technologies, including Next.js, Tailwind CSS, Shadcn-ui, and TypeScript. The application's data is stored in a robust PostgreSQL database, securely hosted on PlanetScale, while the app itself is deployed seamlessly on Vercel.
+
+For seamless state management, the application relies on Zustand, ensuring smooth interactions and real-time updates. Zod, on the other hand, empowers the app with sophisticated schema validation, ensuring data consistency and accuracy.
+
+This feature-rich admin panel encompasses all the essential functionalities needed to efficiently manage an e-commerce store. It boasts a responsive design, seamlessly adapting to various screen sizes, and offering both dark and light modes to cater to user preferences. Additionally, the application is thoughtfully integrated with Stripe, providing seamless payment features for enhanced user experiences.
 
 [Frontend](https://ecommerce-store-topaz-psi.vercel.app/)
 
